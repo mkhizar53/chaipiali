@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #5d4037;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: 'Edu SA Beginner', cursive;
+  color: #5d4037;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #5d4037;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: 'Edu SA Beginner', cursive;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color : #5d4037;
+  border: 1px solid #5d4037;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.col-25 {
+  font-family: 'Edu SA Beginner', cursive;
+    color: #5d4037;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  font-size: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #5d4037;;
+    border: 2px solid #5d4037; /* Chocolate brown color */
+    border-radius: 10px;
+    font-family: 'Edu SA Beginner', cursive;
+    /* Chocolate brown color */
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: white; /* Chocolate brown color */
+    color: #5d4037;
+    text-decoration: none;
+}
+
+.container2 {
+  margin-top: 20px;
+  /* border: 3px solid green; */
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+
+</head>
+<body>
+<h2 style="font-family: 'Edu SA Beginner', cursive; color: #5d4037;"> <a style="text-decoration: none; color: #5d4037;" href="index.html">We're Excited to be at your Sepcial Day! </a></h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Full Name*</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fullname" placeholder="Your name.." required>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">Email*</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="email" placeholder="Email Address.." required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Phone Number</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="phonenumber" placeholder="310-XXX-XXXX">
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">Type of Event*</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="typeofevent" placeholder="Wedding, Birthday, Corporate.." required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">Size of Event*</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="sizeofevent" placeholder="50, 100, 200 people.." required>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">Date of Event*</label>
+        </div>
+        <div class="col-75">
+            <input type="date" id="start" name="trip-start"
+            value="2018-07-22"
+            min="2018-01-01" max="2018-12-31" required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">Time of Event</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="timeofevent" placeholder="8AM - 10AM..">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">Location of Event*</label>
+        </div>
+        <div class="col-75">
+          <input style="font-size: 20px;" type="text" id="fname" name="location" placeholder="Filoli Historic House & Garden.." required>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-25">
+          <label for="fname">How'd you hear about us?*</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="howyouheard" placeholder="IG, TikTok, Google.." required>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Anything else you'd like to let us know?</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="What can we do?" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+
+</div>
+  </form>
+</div>
+</div>
+</body>
+</html>
